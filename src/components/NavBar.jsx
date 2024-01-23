@@ -11,7 +11,7 @@ const NavBar = () => {
                     <Link href="http://"><Image src={logo} alt="logo" /></Link>
                     <p className=" text-black leading-normal text-sm sm:text-[15px] font-semibold font-Poppins relative after:absolute after:-bottom-1 after:w-[80%] after:h-[2px] after:rounded-full after:bg-[#B00000] after:left-[10%]">Our Services</p>
                 </div>
-                <div className="flex justify-between items-center ml-[135px] w-[67%]">
+                <div className="flex justify-between items-center ml-[135px] w-[60%] xl:w-[67%]">
                     <ul className="flex items-center gap-8">
                         <li><Link href="#" className={`${NavLinks}`}>About</Link></li>
                         <li><Link href="#" className={`${NavLinks}`}>Blog&News</Link></li>
