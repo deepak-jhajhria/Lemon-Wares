@@ -63,7 +63,7 @@ const Header = () => {
                 </div>
                 <div className='flex justify-center lg:justify-end mt-4'>
                     <div className='relative lg:mr-10 xl:mr-0'>
-                        <Image src={headerimg} alt='header image' />
+                        <Image src={headerimg} alt='header image'  placeholder='blur'/>
                         <span className=' absolute left-0 bottom-[33%] -translate-x-6'><HeaderLeftSvg /></span>
                         <span className=' absolute right-0 top-[13%] translate-x-6'><HeaderRightFirstSvg /></span>
                         <span className=' absolute right-0 bottom-[10%] translate-x-6'><HeaderRight2Svg /></span>
