@@ -44,8 +44,8 @@ const Clouds = () => {
       <div className="grid grid-cols-2 xl:grid-cols-4 mt-20 lg:mt-[100px] xl:mt-[126px] ml-11 mr-12 gap-10 xl:gap-5">
         {
           Items.map((items, index) => (
-            <div className='flex w-full justify-center'>
-              <div key={index} className='flex flex-col justify-center items-center max-w-[259px]'>
+            <div key={index} className='flex w-full justify-center'>
+              <div  className='flex flex-col justify-center items-center max-w-[259px]'>
                 {items.Svg}
                 <h2 className='text-black font-bold text-xl mt-3 font-Poppins'>{items.title}</h2>
                 <p className='text-black text-xs font-Poppins text-center font-light mt-1'>{items.para}</p>
