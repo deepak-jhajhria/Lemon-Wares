@@ -5,6 +5,7 @@ import Link from "next/link"
 import { PhoneCallIcon } from "./Icons"
 import { useState } from "react"
 import { Sling as Hamburger } from 'hamburger-react'
+import { NavLink } from "react-router-dom";
 const NavBar = () => {
     let NavLinks = "text-black leading-normal text-sm sm:text-[15px] font-semibold font-Poppins relative after:duration-300 after:absolute after:-bottom-1 transition duration-300 after:w-0 hover:after:w-[80%] after:h-[1px] after:rounded-full after:bg-[#B00000] after:left-[10%]"
     const [isOpen, setOpen] = useState(false);
@@ -26,12 +27,12 @@ const NavBar = () => {
                     </div>
                     <div className={`${isOpen ? "right-0" : "-right-full"} flex items-center gap-[55px] mobileview lg:justify-between lg:ml-20 xl:ml-[135px] lg:w-[60%] xl:w-[67%]`}>
                         <ul className="flex max-lg:flex-col items-center gap-8">
-                            <li><Link onClick={RemoveOverflow} href="#" className={`${NavLinks}`}>About</Link></li>
-                            <li><Link onClick={RemoveOverflow} href="#" className={`${NavLinks}`}>Blog&News</Link></li>
-                            <li><Link onClick={RemoveOverflow} href="#" className={`${NavLinks}`}>Contact</Link></li>
+                            <li><NavLink to={"/about"} onClick={RemoveOverflow}  className={`${NavLinks}`}>About</NavLink></li>
+                            <li><NavLink to={"/blogs"} onClick={RemoveOverflow}  className={`${NavLinks}`}>Blog&News</NavLink></li>
+                            <li><NavLink to={"/contact"} onClick={RemoveOverflow} className={`${NavLinks}`}>Contact</NavLink></li>
                         </ul>
                         <ul className="flex max-xs:flex-col items-center gap-8 xs:ml-10">
-                            <li><Link onClick={RemoveOverflow} href="#" className={`${NavLinks}`}>Account</Link></li>
+                            <li><NavLink to={"/account"} onClick={RemoveOverflow} className={`${NavLinks}`}>Account</NavLink></li>
                             <li><Link onClick={RemoveOverflow} href="tel:+2349067322844" className={`${NavLinks} flex items-center gap-[6px] px-[30px] border-l border-l-[#DAD8D8] hover:after:left-[20%] hover:after:w-[60%]`}><PhoneCallIcon /> +2349067322844</Link></li>
                         </ul>
                     </div>
