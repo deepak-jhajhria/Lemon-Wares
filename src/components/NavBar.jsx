@@ -30,7 +30,7 @@ const NavBar = () => {
                             <li><Link onClick={RemoveOverflow} href="#" className={`${NavLinks}`}>Blog&News</Link></li>
                             <li><Link onClick={RemoveOverflow} href="#" className={`${NavLinks}`}>Contact</Link></li>
                         </ul>
-                        <ul className="flex items-center gap-8 ml-10">
+                        <ul className="flex max-xs:flex-col items-center gap-8 xs:ml-10">
                             <li><Link onClick={RemoveOverflow} href="#" className={`${NavLinks}`}>Account</Link></li>
                             <li><Link onClick={RemoveOverflow} href="tel:+2349067322844" className={`${NavLinks} flex items-center gap-[6px] px-[30px] border-l border-l-[#DAD8D8] hover:after:left-[20%] hover:after:w-[60%]`}><PhoneCallIcon /> +2349067322844</Link></li>
                         </ul>
